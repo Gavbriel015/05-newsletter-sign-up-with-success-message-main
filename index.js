@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     email.addEventListener('blur', (e) => {
         if (!validarEmail(e.target.value)) {
             email.classList.add('text-red-600', 'bg-red-100', 'border-red-400');
-            errorEmail.textContent = 'Correo electrónico no válido';
+            errorEmail.textContent = 'Valid email required';
         } else {
             email.classList.remove('text-red-600', 'bg-red-100', 'border-red-400');
             errorEmail.textContent = '';
